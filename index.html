@@ -195,10 +195,10 @@
 
       if (matches.length > 0) {
         resultDiv.innerHTML = matches.map(([name, seat]) =>
-          `<div><strong>${capitalizeName(name)}</strong> is sitting on ${seat}</div>`
+          `<div><strong>${capitalizeName(name)}</strong> you're on ${seat}</div>`
         ).join("");
       } else {
-        resultDiv.textContent = "Name not found.";
+        resultDiv.textContent = "Are you sure you were invited?";
       }
     }
 
